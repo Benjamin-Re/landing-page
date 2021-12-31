@@ -8,7 +8,7 @@ body {
 
 .hero {
     font-size: 48px;
-    font-weight: extra-bold;
+    font-weight: 800;
     color: #F9FAF8;
 }
 
@@ -51,8 +51,17 @@ a {
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
+    font-weight: 300;
 }
 
 .placeholder {
     background-color: #646464;
+    width: 200px;
+    height: 100px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    border: solid blue 2px;
 }
