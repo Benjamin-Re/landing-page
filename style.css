@@ -1,3 +1,4 @@
+/* COLOR AND STYLE */
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -20,11 +21,17 @@ body {
 .logo {
     font-size: 24px;
     color: #F9FAF9;
+    font-weight: 700;
 }
 
 button {
     background-color: #3882F6;
     color: white;
+    padding: 5px 18px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+    font-size: 18px;
 }
 
 ul {
@@ -56,12 +63,135 @@ a {
 
 .placeholder {
     background-color: #646464;
-    width: 200px;
-    height: 100px;
+    min-width: 200px;
+    min-height: 250px;
 }
 
 .image {
-    width: 100px;
-    height: 100px;
-    border: solid blue 2px;
+    width: 150px;
+    height: 150px;
+    border: solid blue 4px;
+    border-radius: 10px;
+}
+
+.four-container {
+    background-color: #3882F6;
+    color: white;
+    border-radius: 10px;
+}
+
+.four-left-text > div:first-child {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.four-container > button {
+    border: solid white 4px;
+}
+
+/* ALIGNMENT */
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+ul {
+    display: flex;
+    flex: 1;
+    gap: 16px;
+    padding: 0;
+}
+
+li:first-child {
+    margin-left: auto;
+}
+
+.one {
+    padding: 10px 250px 100px 250px;
+}
+
+.sub-header {
+    display: flex;
+    gap: 48px;
+}
+
+.hero-text {
+    flex: 1 1 0;
+}
+
+.placeholder {
+    flex: 1 1 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* INFORMATION */
+.two {
+    padding: 100px 200px;
+}
+
+.information {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.two-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+
+.two-container > div {
+    max-width: 150px;
+    text-align: center;
+}
+
+.image {
+    margin: auto;
+}
+
+/* QUOTE */
+.three {
+    padding: 5% 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quote {
+    width: 100%;
+}
+
+.citation {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+/* CALL TO ACTION */
+
+.four, .four-container {
+    padding: 5% 15%;
+}
+
+.four-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
